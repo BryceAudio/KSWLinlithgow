@@ -26,13 +26,15 @@
             max-height: 80%;
             object-fit: contain; /* Prevents cropping */
             z-index: 10;
+            /* Added opacity for partial transparency */
+            opacity: 0.6;
         }
         /* Updated styles for the navigation bar */
         .topnav {
             /* Keep horizontal (row) layout on all screen sizes */
             display: flex;
             flex-direction: row; 
-            /* *** UPDATED: Changed to flex-start to align logo left *** */
+            /* Changed to flex-start to align logo left */
             justify-content: flex-start; 
             padding: 0.5rem 1rem; /* Added horizontal padding to the nav bar */
             width: 100%;
@@ -44,7 +46,7 @@
         .nav-links {
             display: flex;
             flex-wrap: wrap;
-            /* *** NEW: Use margin-left: auto and margin-right: auto to center the group *** */
+            /* Use margin-left: auto and margin-right: auto to center the group */
             margin-left: auto;
             margin-right: auto;
             /* Use flex-grow to ensure it takes up enough space to center properly */
@@ -61,6 +63,14 @@
             margin-right: 1rem; 
             flex-shrink: 0; /* Prevents logo from shrinking on mobile */
         }
+        /* New style for alternating image/text layout */
+        .content-card-image {
+            object-fit: cover;
+            object-position: center 20%;
+            width: 100%;
+            height: 250px;
+            border-radius: 0.5rem; /* rounded-lg */
+        }
     </style>
 </head>
 
@@ -69,7 +79,7 @@
 <!-- Container for the entire header/nav area -->
 <div class="relative w-full">
     
-    <!-- UPDATED: Logo is now INSIDE the nav bar -->
+    <!-- Logo is now INSIDE the nav bar -->
     <nav class="topnav bg-white z-50 relative shadow-md">
       <!-- Logo as the first item, aligned left -->
       <img 
@@ -106,24 +116,50 @@
     <main class="container mx-auto px-4 py-12">
         <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg -mt-20 relative z-10">
             <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Kuk Sool Won of Linlithgow</h1>
-            <p class="text-lg text-gray-600 leading-relaxed text-center mb-8 max-w-2xl mx-auto">
+            <p class="text-lg text-gray-600 leading-relaxed text-center mb-12 max-w-3xl mx-auto">
             Kuk Sool Won is a traditional Korean martial art. We offer classes for all ages in Linlithgow.
             </p>
             
-            <div class="grid md:grid-cols-2 gap-8 mt-12">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                    <h2 class="text-2xl font-semibold mb-2 text-gray-900">Adults</h2>
-                    <p class="text-gray-600">
-                        Info about Kuk Sool Won
-                    </p>
+            <!-- KIDS Section: Image on Left, Text on Right (desktop) - MOVED TO TOP -->
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-4">Kuk Sool Won for Kids</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
+                <!-- Image Column -->
+                <div class="order-1 md:order-1">
+                    <img 
+                        src="./images/archery.jpg" 
+                        alt="Kids Kuk Sool Won Class" 
+                        class="content-card-image"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Kids';"
+                    >
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
-                    <h2 class="text-2xl font-semibold mb-2 text-gray-900">Kids</h2>
+                <!-- Text Content Column -->
+                <div class="order-2 md:order-2 bg-gray-50 p-6 rounded-lg shadow-inner">
                     <p class="text-gray-600">
-                      Info about KSW
+                      Kuk Sool Won is an exceptional discipline for children, focusing on more than just physical movement. Our structured classes help kids develop crucial life skills, including respect, self-control, and concentration, while providing a fantastic physical outlet. The training significantly improves coordination, balance, and fitness in a fun, safe, and supportive environment. As children progress through the ranks, they build unshakeable self-confidence and gain valuable skills to navigate peer pressure and challenging situations.
                     </p>
                 </div>
             </div>
+
+            <!-- ADULTS Section: Text on Left, Image on Right (desktop) - MOVED TO BOTTOM -->
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-12">Kuk Sool Won for Adults</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
+                <!-- Text Content Column -->
+                <div class="order-2 md:order-1 bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <p class="text-gray-600">
+                        Kuk Sool Won offers adults a comprehensive path to physical and mental fitness that goes far beyond a typical gym routine. It is a traditional Korean martial art that integrates striking, joint locks, throws, and weapon training, making it highly effective for self-defense. Crucially, it's designed to be adaptable for all ages and fitness levels. Training improves cardiovascular health, flexibility, and strength, while the disciplined structure also fosters better focus, stress relief, and a deep sense of accomplishment as you master complex techniques.
+                    </p>
+                </div>
+                <!-- Image Column -->
+                <div class="order-1 md:order-2">
+                    <img 
+                        src="./images/actionA.png" 
+                        alt="Adults Kuk Sool Won Class" 
+                        class="content-card-image"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Adults';"
+                    >
+                </div>
+            </div>
+            
         </div>
     </main>
 
