@@ -29,22 +29,17 @@
         }
         /* Updated styles for the navigation bar */
         .topnav {
-            /* Default to a centered column (stacking vertically) on mobile */
+            /* Keep horizontal (row) layout on all screen sizes */
             display: flex;
-            flex-direction: column;
-            align-items: center; 
+            flex-direction: row; 
+            justify-content: center; 
             padding: 0.5rem 0; /* Reduced overall padding for mobile */
             width: 100%;
+            /* Allow items to wrap onto a new line if needed, preventing overflow/cutoff */
+            flex-wrap: wrap; 
         }
 
-        /* Use a media query to switch back to a horizontal row on medium screens and up */
-        @media (min-width: 768px) { /* Tailwind's 'md' breakpoint */
-            .topnav {
-                flex-direction: row;
-                justify-content: center;
-                padding: 1rem 0;
-            }
-        }
+        /* Removed the media query as we want row layout always */
     </style>
 </head>
 
