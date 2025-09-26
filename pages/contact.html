@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Kuk Sool Won of Linlithgow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .header-image {
+            object-fit: cover;
+            width: 100%;
+            height: 500px;
+        }
+        .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centers the image */
+            width: auto; /* Allow image to scale proportionally */
+            max-width: 80%; /* Ensures the image doesn't overflow */
+            height: auto;
+            max-height: 80%;
+            object-fit: contain; /* Prevents cropping */
+            z-index: 10;
+        }
+        /* New styles for the navigation bar */
+        .topnav {
+            display: flex;
+            justify-content: center; /* This centers the navigation links */
+            padding: 1rem 0;
+        }
+        .topnav a {
+            padding: 1rem 2rem; /* Increased padding to make the links bigger */
+            font-size: 1.25rem; /* Increased font size for bigger text */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="../pages/about.html">About</a>
+ <a href="../pages/classes.html">Classes</a>
+  <a href="../pages/contact.html">Contact</a>
+
+</nav>
+
+    <!-- Header Img -->
+    <header class="relative w-full overflow-hidden rounded-b-lg shadow-lg">
+        <!-- Background image for About page -->
+        <img src="../images/boardsA.jpg" alt="A group of students training" class="header-image">
+        
+        <!-- Transparent overlay image (logo) -->
+        <img src="../images/Logo-Transparent.webp" alt="Transparent overlay" class="overlay-image">
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg -mt-20 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Get In Touch</h1>
+            <p class="text-lg text-gray-600 leading-relaxed text-center mb-8 max-w-2xl mx-auto">
+                We would love to hear from you! Whether you have a question about classes, membership, or just want to learn more about Kuk Sool Won, please fill out the form below and we'll get back to you as soon as possible.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-900">Send us a message</h2>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"></textarea>
+                        </div>
+                        <button type="submit" class="w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <!-- Contact Details -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h2 class="text-2xl font-semibold mb-4 text-gray-900">Contact Details</h2>
+                    <address class="text-gray-600 not-italic space-y-4">
+                    
+                        <div>
+                            <h3 class="font-bold">Phone:</h3>
+                            <p>+44 (0) 1234 567890</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Email:</h3>
+                            <p>contact@kuksoolwonlinlithgow.com</p>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12 text-center rounded-t-xl">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Kuk Sool Won of Linlithgow. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

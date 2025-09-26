@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Kuk Sool Won of Linlithgow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .header-image {
+            object-fit: cover;
+            width: 100%;
+            height: 500px;
+        }
+        .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centers the image */
+            width: auto; /* Allow image to scale proportionally */
+            max-width: 80%; /* Ensures the image doesn't overflow */
+            height: auto;
+            max-height: 80%;
+            object-fit: contain; /* Prevents cropping */
+            z-index: 10;
+        }
+        /* New styles for the navigation bar */
+        .topnav {
+            display: flex;
+            justify-content: center; /* This centers the navigation links */
+            padding: 1rem 0;
+        }
+        .topnav a {
+            padding: 1rem 2rem; /* Increased padding to make the links bigger */
+            font-size: 1.25rem; /* Increased font size for bigger text */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="../pages/about.html">About</a>
+      <a href="../pages/classes.html">Classes</a>
+  <a href="../pages/contact.html">Contact</a>
+
+</nav>
+
+    <!-- Header Img -->
+    <header class="relative w-full overflow-hidden rounded-b-lg shadow-lg">
+        <!-- Background image for About page -->
+        <img src="../images/archery.jpg" alt="A group of students training" class="header-image">
+        
+        <!-- Transparent overlay image (logo) -->
+        <img src="../images/Logo-Transparent.webp" alt="Transparent overlay" class="overlay-image">
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg -mt-20 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Our Story</h1>
+            <p class="text-lg text-gray-600 leading-relaxed text-center mb-8 max-w-2xl mx-auto">
+                Founded in 2024, our mission is to promote physical fitness, mental discipline, and a strong sense of community through the practice of Kuk Sool Won. We believe that martial arts are for everyone, regardless of age or experience.
+            </p>
+            
+            
+            </div>
+        </div>
+
+        <!-- Meet the Instructors Section -->
+        <div class="mt-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">Meet the Instructors</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Instructor 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="https://placehold.co/200x200/cccccc/ffffff?text=Instructor+1" alt="Instructor 1 Photo" class="rounded-full mx-auto mb-4 w-48 h-48 object-cover shadow-md">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Nikki Robertson</h3>
+                    <p class="text-gray-600">
+                     TODO: Which instructors? Images? Info About - Black belt degree/training etc
+                      </p>
+                </div>
+                <!-- Instructor 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="https://placehold.co/200x200/cccccc/ffffff?text=Instructor+2" alt="Instructor 2 Photo" class="rounded-full mx-auto mb-4 w-48 h-48 object-cover shadow-md">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Ashley Swanson</h3>
+                    <p class="text-gray-600">
+                      Info About - Black belt degree/training etc
+                    </p>
+                </div>
+                <!-- Instructor 3 (optional) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="https://placehold.co/200x200/cccccc/ffffff?text=Instructor+3" alt="Instructor 3 Photo" class="rounded-full mx-auto mb-4 w-48 h-48 object-cover shadow-md">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Instructor</h3>
+                    <p class="text-gray-600">
+                      Info About - Black belt degree/training etc
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12 text-center rounded-t-xl">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Kuk Sool Won of Linlithgow. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

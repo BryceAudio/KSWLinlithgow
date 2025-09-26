@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuk Sool Won of Linlithgow | Classes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .header-image {
+            object-fit: cover;
+            width: 100%;
+            height: 500px;
+        }
+        .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centers the image */
+            width: auto; /* Allow image to scale proportionally */
+            max-width: 80%; /* Ensures the image doesn't overflow */
+            height: auto;
+            max-height: 80%;
+            object-fit: contain; /* Prevents cropping */
+            z-index: 10;
+        }
+        /* New styles for the navigation bar */
+        .topnav {
+            display: flex;
+            justify-content: center; /* This centers the navigation links */
+            padding: 1rem 0;
+        }
+        .topnav a {
+            padding: 1rem 2rem; /* Increased padding to make the links bigger */
+            font-size: 1.25rem; /* Increased font size for bigger text */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="../pages/about.html">About</a>
+  <a href="../pages/classes.html">Classes</a>
+  <a href="../pages/contact.html">Contact</a>
+</nav>
+
+    <!-- Header Img -->
+    <header class="relative w-full overflow-hidden rounded-b-lg shadow-lg">
+        <!-- Background image for Classes page -->
+        <img src="../images/tournamentB.jpg" alt="Kuk Sool Won of Linlithgow Classes" class="header-image">
+        
+        <!-- Transparent overlay image (logo) -->
+        <img src="../images/Logo-Transparent.webp" alt="Transparent overlay" class="overlay-image">
+    </header>
+
+      <!-- Main Content Section -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg -mt-20 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Our Classes</h1>
+            <p class="text-lg text-gray-600 leading-relaxed text-center mb-8 max-w-2xl mx-auto">
+                We offer a variety of classes for all ages and skill levels. Find the perfect class for you below.
+            </p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+                <!-- Card 1: Family -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-semibold mb-2 text-gray-900">All-Ages Classes</h2>
+                        <p class="text-gray-600 mb-1"><strong class="font-bold">Date:</strong> Tuesday</p>
+                        <p class="text-gray-600 mb-1"><strong class="font-bold">Time:</strong> 6:30 PM - 7:30 PM</p>
+                        <p class="text-gray-600 mb-4"><strong class="font-bold">Location:</strong> Xcite Leisure Centre, Linlithgow</p>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-semibold mb-2 text-gray-900"></h2>
+                        <p class="text-gray-600 mb-1"><strong class="font-bold">Date:</strong> Friday</p>
+                        <p class="text-gray-600 mb-1"><strong class="font-bold">Time:</strong> 6:00 PM - 7:00 PM</p>
+                        <p class="text-gray-600"><strong class="font-bold">Location:</strong> Longcroft Hall, Linlithgow</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Kicking Koalas -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-semibold mb-2 text-gray-900">Kicking Koalas</h2>
+                        <p class="text-gray-600 mb-1"><strong class="font-bold">Date:</strong> Tuesday</p>
+                        <p class="text-gray-600 mb-1"><strong class="font-bold">Time:</strong> 6:00 PM - 6:45 PM</p>
+                        <p class="text-gray-600 mb-4"><strong class="font-bold">Location:</strong> Xcite Leisure Centre, Linlithgow</p>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12 text-center rounded-t-xl">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Kuk Sool Won of Linlithgow. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
