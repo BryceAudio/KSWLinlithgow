@@ -33,23 +33,18 @@
             display: flex;
             flex-direction: row; 
             justify-content: center; 
-            padding: 0.5rem 0; /* Reduced overall padding for mobile */
+            padding: 0.5rem 0; 
             width: 100%;
-            /* Allow items to wrap onto a new line if needed, preventing overflow/cutoff */
             flex-wrap: wrap; 
         }
-
-        /* Removed the media query as we want row layout always */
     </style>
 </head>
 
 <body>
 
-<!-- Container for the entire header/nav area to use relative positioning -->
-<!-- **UPDATED:** Added z-30 class here to make the navigation bar sit above the logo (z-20) -->
-<div class="relative w-full z-30">
-    <!-- TOP-RIGHT LOGO (Fixed to the top right of the viewport) -->
-    <!-- Logo z-index is 20 -->
+<!-- Container for the entire header/nav area -->
+<div class="relative w-full">
+    <!-- TOP-RIGHT LOGO (Fixed, z-index: 20) -->
     <img 
         src="./images/Logo-Transparent.webp" 
         alt="Small Kuk Sool Won Logo" 
@@ -57,7 +52,9 @@
         style="position: fixed;"
     >
     
-    <nav class="topnav">
+    <!-- UPDATED: Added a solid background (bg-white) and increased z-index (z-50) 
+         to ensure the nav bar is always on top of the logo (z-20) -->
+    <nav class="topnav bg-white z-50 relative">
       <!-- These classes are now responsive on their own padding (p-3/p-4) and text size (text-lg/text-xl) -->
       <a href="./index.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Home</a>
       <a href="./pages/about.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">About</a>
