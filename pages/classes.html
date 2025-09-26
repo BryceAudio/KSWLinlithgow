@@ -42,12 +42,26 @@
 
 <body>
 
-<nav class="topnav">
-  <a href="../index.html">Home</a>
-  <a href="../pages/about.html">About</a>
-  <a href="../pages/classes.html">Classes</a>
-  <a href="../pages/contact.html">Contact</a>
-</nav>
+<!-- Container for the entire header/nav area -->
+<div class="relative w-full">
+    <!-- TOP-RIGHT LOGO (Fixed, z-index: 20) -->
+    <img 
+        src="../images/Logo-Transparent.webp" 
+        alt="Small Kuk Sool Won Logo" 
+        class="absolute top-0 right-0 w-16 h-16 md:w-20 md:h-20 p-2 z-20 object-contain" 
+        style="position: fixed;"
+    >
+    
+    <!-- UPDATED: Added a solid background (bg-white) and increased z-index (z-50) 
+         to ensure the nav bar is always on top of the logo (z-20) -->
+    <nav class="topnav bg-white z-50 relative">
+      <!-- These classes are now responsive on their own padding (p-3/p-4) and text size (text-lg/text-xl) -->
+      <a href="../index.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Home</a>
+      <a href="../pages/about.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">About</a>
+      <a href="../pages/classes.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Classes</a>
+      <a href="../pages/contact.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Contact</a>
+    </nav>
+</div>
 
     <!-- Header Img -->
     <header class="relative w-full overflow-hidden rounded-b-lg shadow-lg">
