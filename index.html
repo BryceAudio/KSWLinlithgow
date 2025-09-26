@@ -27,15 +27,24 @@
             object-fit: contain; /* Prevents cropping */
             z-index: 10;
         }
-        /* New styles for the navigation bar */
-        /* Removed fixed sizing here and moved to responsive Tailwind classes in HTML */
+        /* Updated styles for the navigation bar */
         .topnav {
+            /* Default to a centered column (stacking vertically) on mobile */
             display: flex;
-            justify-content: center; /* This centers the navigation links */
-            padding: 1rem 0;
+            flex-direction: column;
+            align-items: center; 
+            padding: 0.5rem 0; /* Reduced overall padding for mobile */
+            width: 100%;
         }
 
-        /* Removed .topnav a fixed styles to allow for responsive Tailwind classes */
+        /* Use a media query to switch back to a horizontal row on medium screens and up */
+        @media (min-width: 768px) { /* Tailwind's 'md' breakpoint */
+            .topnav {
+                flex-direction: row;
+                justify-content: center;
+                padding: 1rem 0;
+            }
+        }
     </style>
 </head>
 
@@ -52,7 +61,7 @@
     >
     
     <nav class="topnav">
-      <!-- Added responsive Tailwind classes (p-3/p-4, text-lg/text-xl) for sizing -->
+      <!-- These classes are now responsive on their own padding (p-3/p-4) and text size (text-lg/text-xl) -->
       <a href="./index.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Home</a>
       <a href="./pages/about.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">About</a>
       <a href="./pages/classes.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Classes</a>
