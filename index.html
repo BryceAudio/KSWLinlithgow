@@ -1,4 +1,12 @@
-   <style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuk Sool Won of Linlithgow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -54,3 +62,76 @@
             flex-shrink: 0; /* Prevents logo from shrinking on mobile */
         }
     </style>
+</head>
+
+<body>
+
+<!-- Container for the entire header/nav area -->
+<div class="relative w-full">
+    
+    <!-- UPDATED: Logo is now INSIDE the nav bar -->
+    <nav class="topnav bg-white z-50 relative shadow-md">
+      <!-- Logo as the first item, aligned left -->
+      <img 
+          src="./images/Logo-Transparent.webp" 
+          alt="Small Kuk Sool Won Logo" 
+          class="nav-logo hidden md:block"
+      >
+      
+      <!-- Container to hold all links and center them -->
+      <div class="nav-links">
+        <!-- These classes are now responsive on their own padding (p-3/p-4) and text size (text-lg/text-xl) -->
+        <a href="./index.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Home</a>
+        <a href="./pages/about.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">About</a>
+        <a href="./pages/classes.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Classes</a>
+        <a href="./pages/contact.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Contact</a>
+      </div>
+      <!-- Empty div for symmetry on desktop, pushed to the right with margin-left: auto 
+           This element is key to ensuring the nav-links group is mathematically centered -->
+      <div class="hidden md:block" style="width: 4rem; margin-left: 1rem; flex-shrink: 0;"></div>
+    </nav>
+</div>
+
+
+    <!-- Header Img -->
+    <header class="relative w-full overflow-hidden rounded-b-lg shadow-lg">
+        <!-- Background image -->
+        <img src="./images/PeopleA.jpg" alt="Kuk Sool Won of Linlithgow Logo" class="header-image">
+        
+        <!-- Transparent overlay image -->
+        <img src="./images/Logo-Transparent.webp" alt="Transparent overlay" class="overlay-image">
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg -mt-20 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Kuk Sool Won of Linlithgow</h1>
+            <p class="text-lg text-gray-600 leading-relaxed text-center mb-8 max-w-2xl mx-auto">
+            Kuk Sool Won is a traditional Korean martial art. We offer classes for all ages in Linlithgow.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-900">Adults</h2>
+                    <p class="text-gray-600">
+                        Info about Kuk Sool Won
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h2 class="text-2xl font-semibold mb-2 text-gray-900">Kids</h2>
+                    <p class="text-gray-600">
+                      Info about KSW
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12 text-center rounded-t-xl">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Kuk Sool Won of Linlithgow. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
