@@ -6,7 +6,7 @@
     <title>Kuk Sool Won of Linlithgow | Classes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
+     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -27,15 +27,39 @@
             object-fit: contain; /* Prevents cropping */
             z-index: 10;
         }
-        /* New styles for the navigation bar */
+        /* Updated styles for the navigation bar */
         .topnav {
+            /* Keep horizontal (row) layout on all screen sizes */
             display: flex;
-            justify-content: center; /* This centers the navigation links */
-            padding: 1rem 0;
+            flex-direction: row; 
+            /* *** UPDATED: Changed to flex-start to align logo left *** */
+            justify-content: flex-start; 
+            padding: 0.5rem 1rem; /* Added horizontal padding to the nav bar */
+            width: 100%;
+            flex-wrap: wrap; 
+            align-items: center; /* Vertically align items */
         }
-        .topnav a {
-            padding: 1rem 2rem; /* Increased padding to make the links bigger */
-            font-size: 1.25rem; /* Increased font size for bigger text */
+
+        /* New style to center the navigation links */
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            /* *** NEW: Use margin-left: auto and margin-right: auto to center the group *** */
+            margin-left: auto;
+            margin-right: auto;
+            /* Use flex-grow to ensure it takes up enough space to center properly */
+            flex-grow: 1; 
+            justify-content: center; /* Center the links themselves within their container */
+        }
+
+        /* Style for the logo inside the navigation */
+        .nav-logo {
+            width: 4rem; /* 16 */
+            height: 4rem; /* 16 */
+            object-fit: contain;
+            /* Reduced margin as the nav-links container will handle the spacing */
+            margin-right: 1rem; 
+            flex-shrink: 0; /* Prevents logo from shrinking on mobile */
         }
     </style>
 </head>
