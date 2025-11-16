@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Kuk Sool Won of Linlithgow</title>
+    <title>Kuk Sool Won of Linlithgow | About</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
       <style>
@@ -33,7 +33,7 @@
             /* Keep horizontal (row) layout on all screen sizes */
             display: flex;
             flex-direction: row; 
-            /* *** UPDATED: Changed to flex-start to align logo left *** */
+            /* UPDATED: Changed to flex-start to align logo left */
             justify-content: flex-start; 
             padding: 0.5rem 1rem; /* Added horizontal padding to the nav bar */
             width: 100%;
@@ -45,7 +45,7 @@
         .nav-links {
             display: flex;
             flex-wrap: wrap;
-            /* *** NEW: Use margin-left: auto and margin-right: auto to center the group *** */
+            /* NEW: Use margin-left: auto and margin-right: auto to center the group */
             margin-left: auto;
             margin-right: auto;
             /* Use flex-grow to ensure it takes up enough space to center properly */
@@ -107,42 +107,87 @@
             <p class="text-lg text-gray-600 leading-relaxed text-center mb-8 max-w-2xl mx-auto">
                 Founded in 2024, our mission is to promote physical fitness, mental discipline, and a strong sense of community through the practice of Kuk Sool Won. We believe that martial arts are for everyone, regardless of age or experience.
             </p>
-            
-            
-            </div>
         </div>
 
         <!-- Meet the Instructors Section -->
         <div class="mt-12">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">Meet the Instructors</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Instructor 1 -->
+            
+            <!-- Grid changed to 2 columns (lg:grid-cols-2) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Instructor 1: SBN Nikki Robertson -->
                 <div class="bg-white p-6 rounded-xl shadow-lg text-center">
-                    <img src="https://placehold.co/200x200/cccccc/ffffff?text=Instructor+1" alt="Instructor 1 Photo" class="rounded-full mx-auto mb-4 w-48 h-48 object-cover shadow-md">
-                    <h3 class="text-xl font-bold mb-2 text-gray-800">Nikki Robertson</h3>
-                    <p class="text-gray-600">
-                     TODO: Which instructors? Images? Info About - Black belt degree/training etc
-                      </p>
-                </div>
-                <!-- Instructor 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
-                    <img src="https://placehold.co/200x200/cccccc/ffffff?text=Instructor+2" alt="Instructor 2 Photo" class="rounded-full mx-auto mb-4 w-48 h-48 object-cover shadow-md">
-                    <h3 class="text-xl font-bold mb-2 text-gray-800">Ashley Swanson</h3>
-                    <p class="text-gray-600">
-                      Info About - Black belt degree/training etc
+                    <img src="../images/sbnnikki.jpg" alt="SBN Nikki Robertson Photo" class="rounded-full mx-auto mb-4 w-48 h-48 object-cover shadow-md">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Nikki Robertson (SBN)</h3>
+                    <p class="text-sm font-semibold text-gray-700 mb-4">School Owner & Chief Instructor</p>
+                    <p class="text-gray-600 text-left text-base">
+                        SBN Nikki is Kuk Sool Won Linlithgow's school owner. Working alongside her Instructor Team she will ensure all our students receive a well-balanced and structured Martial Arts experience. 
+                        SBN Nikki has over 25 years teaching experience in Education, Martial Arts, and Youth Engagement. 
+                        <br> She is a 4th Degree Black Belt and has competed in WKSA Tournaments around the world achieving many gold medals and a Grand Champion awards.<br> 
+                        She was a member of the WKSA European Ladies Demonstration Team for 4 years and trained and took part in demos in the UK, Spain and Germany.<br>
+                        SBN Nikki has completed numerous Safeguarding Adults and Children and Young People courses throughout her employment. 
+                        She is a qualified First Aider and Mental Health First Aider.
+                        She looks forward to welcoming you to Kuk Sool Won of Linlithgow.
                     </p>
                 </div>
-                <!-- Instructor 3 (optional) -->
+                <!-- Instructor 2: Ashley Swanson -->
                 <div class="bg-white p-6 rounded-xl shadow-lg text-center">
-                    <img src="https://placehold.co/200x200/cccccc/ffffff?text=Instructor+3" alt="Instructor 3 Photo" class="rounded-full mx-auto mb-4 w-48 h-48 object-cover shadow-md">
-                    <h3 class="text-xl font-bold mb-2 text-gray-800">Instructor</h3>
-                    <p class="text-gray-600">
-                      Info About - Black belt degree/training etc
+                    <img src="https://placehold.co/200x200/cccccc/ffffff?text=Ashley+Swanson" alt="Instructor 2 Photo" class="rounded-full mx-auto mb-4 w-48 h-48 object-cover shadow-md">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Ashley Swanson</h3>
+                    <p class="text-sm font-semibold text-gray-700 mb-4">Senior Instructor</p>
+                    <p class="text-gray-600 text-left text-base">
+                      Ashley is a dedicated black belt instructor focused on physical conditioning and competitive sparring. She assists with the intermediate and advanced adult classes, bringing a focused and energetic teaching style to the dojang.
                     </p>
                 </div>
             </div>
         </div>
+        
+        <!-- SENIOR INSTRUCTORS TEAM Section (Consolidated to one full-width panel) -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">Senior Instructors Team</h2>
+            
+            <!-- Single column layout -->
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Team Panel -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col md:flex-row items-start gap-6">
+                    <!-- Image Area (takes up 1/3 width on desktop) -->
+                    <div class="w-full md:w-1/3 flex-shrink-0">
+                         <img src="../images/SnrInstructors.jpeg" alt="Senior Instructor Team" class="rounded-lg w-full h-auto object-cover shadow-md">
+                    </div>
+                    <!-- Text Area (takes up 2/3 width on desktop) -->
+                    <div class="w-full md:w-2/3 text-left">
+                        <h3 class="text-2xl font-bold mb-3 text-gray-800">Our Core Leadership</h3>
+                        <p class="text-gray-600 text-base">
+                            The Senior Instructors Team is responsible for the overall direction and quality of training at Kuk Sool Won of Linlithgow. Comprised of high-degree black belts with decades of combined experience, they craft the curriculum, oversee student development, and uphold the traditions and standards of the art. They are the backbone of our school's excellence and leadership. Each member brings unique expertise, ensuring comprehensive training in every aspect of Kuk Sool Won, from advanced forms to specialized weapons techniques.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- INSTRUCTORS ASSISTANT TEAM Section (Consolidated to one full-width panel) -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">Instructors Assistant Team</h2>
+            
+            <!-- Single column layout -->
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Team Panel -->
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col md:flex-row items-start gap-6">
+                    <!-- Image Area (takes up 1/3 width on desktop) -->
+                    <div class="w-full md:w-1/3 flex-shrink-0">
+                         <img src="../images/AsstInstructors.jpeg" alt="Assistant Instructor Team" class="rounded-lg w-full h-auto object-cover shadow-md">
+                    </div>
+                    <!-- Text Area (takes up 2/3 width on desktop) -->
+                    <div class="w-full md:w-2/3 text-left">
+                        <h3 class="text-2xl font-bold mb-3 text-gray-800">The Student Mentors</h3>
+                        <p class="text-gray-600 text-base">
+                            The Instructors Assistant Team plays a vital role in the classroom, offering direct support to students, particularly those in beginner and youth classes. These dedicated colour belts help maintain energy, demonstrate proper technique, and serve as role models, ensuring personalized attention for every student during busy training sessions. Beyond the mats, they assist with school events, fostering a strong community spirit and gaining essential leadership experience for their future ranks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
 
     <!-- Footer -->
@@ -151,17 +196,16 @@
             <p>&copy; 2024 Kuk Sool Won of Linlithgow. All rights reserved.</p>
         </div>
     </footer>
-</body>
 
 <script src="../acctoolbar.min.js"></script>
-// optional init
+<!-- optional init - moved inside the body tag -->
 <script>
   window.onload = function() {
     window.micAccessTool = new MicAccessTool({
-      link: 'http://your-awesome-website.com/your-accessibility-declaration.pdf',
       contact: 'mailto:your-mail@your-awesome-website.com',
       buttonPosition: 'right', // default is 'left'
     });
   }
 </script>
+</body>
 </html>
