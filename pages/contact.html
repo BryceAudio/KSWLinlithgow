@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuk Sool Won of Linlithgow | Contact</title>
+    <title>Contact Us | Kuk Sool Won of Linlithgow</title>
+     <meta name="description" content="Have questions about our martial arts classes? Get in touch with Kuk Sool Won of Linlithgow via phone, email, or our online contact form.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
       <style>
@@ -28,78 +29,53 @@
             z-index: 10;
             opacity: 0.5;
         }
-        /* Updated styles for the navigation bar */
         .topnav {
-            /* Keep horizontal (row) layout on all screen sizes */
             display: flex;
             flex-direction: row; 
-            /* *** UPDATED: Changed to flex-start to align logo left *** */
             justify-content: flex-start; 
-            padding: 0.5rem 1rem; /* Added horizontal padding to the nav bar */
+            padding: 0.5rem 1rem;
             width: 100%;
             flex-wrap: wrap; 
-            align-items: center; /* Vertically align items */
+            align-items: center;
         }
-
-        /* New style to center the navigation links */
         .nav-links {
             display: flex;
             flex-wrap: wrap;
-            /* *** NEW: Use margin-left: auto and margin-right: auto to center the group *** */
             margin-left: auto;
             margin-right: auto;
-            /* Use flex-grow to ensure it takes up enough space to center properly */
             flex-grow: 1; 
-            justify-content: center; /* Center the links themselves within their container */
+            justify-content: center;
         }
-
-        /* Style for the logo inside the navigation */
         .nav-logo {
-            width: 4rem; /* 16 */
-            height: 4rem; /* 16 */
+            width: 4rem;
+            height: 4rem;
             object-fit: contain;
-            /* Reduced margin as the nav-links container will handle the spacing */
             margin-right: 1rem; 
-            flex-shrink: 0; /* Prevents logo from shrinking on mobile */
+            flex-shrink: 0;
         }
     </style>
 </head>
 
 <body>
 
-<!-- Container for the entire header/nav area -->
+<!-- Navigation -->
 <div class="relative w-full">
-    
-    <!-- UPDATED: Logo is now INSIDE the nav bar -->
     <nav class="topnav bg-white z-50 relative shadow-md">
-      <!-- Logo as the first item, aligned left -->
-      <img 
-          src="../images/Logo-Transparent.webp" 
-          alt="Small Kuk Sool Won Logo" 
-          class="nav-logo hidden md:block"
-      >
-      
-      <!-- Container to hold all links and center them -->
+      <img src="../images/Logo-Transparent.webp" alt="Small Kuk Sool Won Logo" class="nav-logo hidden md:block">
       <div class="nav-links">
-        <!-- These classes are now responsive on their own padding (p-3/p-4) and text size (text-lg/text-xl) -->
         <a href="../index.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Home</a>
         <a href="../pages/about.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">About</a>
         <a href="../pages/classes.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Classes</a>
          <a href="../pages/students.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Students</a>
-        <a href="../pages/contact.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Contact</a>
+        <a href="../pages/contact.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-900 bg-gray-100 transition-colors duration-200 rounded-lg">Contact</a>
       </div>
-      <!-- Empty div for symmetry on desktop, pushed to the right with margin-left: auto 
-           This element is key to ensuring the nav-links group is mathematically centered -->
       <div class="hidden md:block" style="width: 4rem; margin-left: 1rem; flex-shrink: 0;"></div>
     </nav>
 </div>
 
-    <!-- Header Img -->
+    <!-- Header Section -->
     <header class="relative w-full overflow-hidden rounded-b-lg shadow-lg">
-        <!-- Background image for About page -->
-        <img src="../images/boardsA.jpg" alt="A group of students training" class="header-image">
-        
-        <!-- Transparent overlay image (logo) -->
+        <img src="../images/boardsA.jpg" alt="Students training" class="header-image">
         <img src="../images/Logo-Transparent.webp" alt="Transparent overlay" class="overlay-image">
     </header>
 
@@ -108,43 +84,68 @@
         <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg -mt-20 relative z-10">
             <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Get In Touch</h1>
             <p class="text-lg text-gray-600 leading-relaxed text-center mb-8 max-w-2xl mx-auto">
-                We would love to hear from you! Whether you have a question about classes, membership, or just want to learn more about Kuk Sool Won, please fill out the form below and we'll get back to you as soon as possible.
+                We would love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                 <!-- Contact Form -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
                     <h2 class="text-2xl font-semibold mb-4 text-gray-900">Send us a message</h2>
-                    <form action="#" method="POST" class="space-y-4">
+                    
+                    <!-- 
+                        ACTION INSTRUCTIONS:
+                        1. Go to https://formspree.io/
+                        2. Create a free account and a new form.
+                        3. Replace "YOUR_FORMSPREE_ID" with the ID they provide (e.g., https://formspree.io/f/xbjnkyol)
+                    -->
+                    <form action="https://formspree.io/f/mqkyzpqb" method="POST" class="space-y-4">
                         <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2">
+                            <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="full-name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border">
                         </div>
                         <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2">
+                            <label for="email-address" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email-address" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border">
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2"></textarea>
+                            <label for="message-content" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message-content" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"></textarea>
                         </div>
-                        <button type="submit" class="w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        
+                        <!-- Anti-spam honeypot (optional) -->
+                        <input type="text" name="_gotcha" style="display:none" />
+
+                        <button type="submit" class="w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
                             Send Message
                         </button>
                     </form>
                 </div>
+
                 <!-- Contact Details -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
                     <h2 class="text-2xl font-semibold mb-4 text-gray-900">Contact Details</h2>
                     <address class="text-gray-600 not-italic space-y-4">
-                    
-                        <div>
-                            <h3 class="font-bold">Phone:</h3>
-                            <p>07808508916</p>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Phone:</h3>
+                                <p>07808508916</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="font-bold">Email:</h3>
-                            <p>linlithgowksw@outlook.com</p>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Email:</h3>
+                                <p>linlithgowksw@outlook.com</p>
+                            </div>
                         </div>
                     </address>
                 </div>
@@ -155,19 +156,21 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-gray-300 py-6 mt-12 text-center rounded-t-xl">
         <div class="container mx-auto px-4">
-            <p>&copy; 2024 Kuk Sool Won of Linlithgow. All rights reserved.</p>
+            <p>&copy; 2025 Kuk Sool Won of Linlithgow. All rights reserved.</p>
         </div>
     </footer>
-</body>
 
-<script src="../acctoolbar.min.js"></script>
-// optional init
-<script>
-  window.onload = function() {
-    window.micAccessTool = new MicAccessTool({
-      contact: 'linlithgowksw@outlook.com',
-      buttonPosition: 'right', // default is 'left'
-    });
-  }
-</script>
+    <!-- Accessibility Toolbar -->
+    <script src="../acctoolbar.min.js"></script>
+    <script>
+      window.onload = function() {
+        if (typeof MicAccessTool !== 'undefined') {
+            window.micAccessTool = new MicAccessTool({
+              contact: 'linlithgowksw@outlook.com',
+              buttonPosition: 'right',
+            });
+        }
+      }
+    </script>
+</body>
 </html>
