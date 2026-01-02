@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuk Sool Won of Linlithgow</title>
+    <title>Kuk Sool Won of Linlithgow | Traditional Korean Martial Arts</title>
+    <meta name="description" content="Kuk Sool Won of Linlithgow offers traditional Korean martial arts classes for kids, youths, and adults. Build confidence, fitness, and discipline in a supportive environment.">
+    <meta name="keywords" content="Kuk Sool Won Linlithgow, martial arts Linlithgow, karate kids Linlithgow, self defense adults, martial arts Scotland">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -26,91 +29,63 @@
             max-height: 80%;
             object-fit: contain; /* Prevents cropping */
             z-index: 10;
-            /* Added opacity for partial transparency */
             opacity: 0.5;
         }
-        /* Updated styles for the navigation bar */
         .topnav {
-            /* Keep horizontal (row) layout on all screen sizes */
             display: flex;
             flex-direction: row; 
-            /* Changed to flex-start to align logo left */
             justify-content: flex-start; 
-            padding: 0.5rem 1rem; /* Added horizontal padding to the nav bar */
+            padding: 0.5rem 1rem;
             width: 100%;
             flex-wrap: wrap; 
-            align-items: center; /* Vertically align items */
+            align-items: center;
         }
-
-        /* New style to center the navigation links */
         .nav-links {
             display: flex;
             flex-wrap: wrap;
-            /* Use margin-left: auto and margin-right: auto to center the group */
             margin-left: auto;
             margin-right: auto;
-            /* Use flex-grow to ensure it takes up enough space to center properly */
             flex-grow: 1; 
-            justify-content: center; /* Center the links themselves within their container */
+            justify-content: center;
         }
-
-        /* Style for the logo inside the navigation */
         .nav-logo {
-            width: 4rem; /* 16 */
-            height: 4rem; /* 16 */
+            width: 4rem;
+            height: 4rem;
             object-fit: contain;
-            /* Reduced margin as the nav-links container will handle the spacing */
             margin-right: 1rem; 
-            flex-shrink: 0; /* Prevents logo from shrinking on mobile */
+            flex-shrink: 0;
         }
-        /* New style for alternating image/text layout */
         .content-card-image {
             object-fit: cover;
             object-position: center 20%;
             width: 100%;
             height: 250px;
-            border-radius: 0.5rem; /* rounded-lg */
+            border-radius: 0.5rem;
         }
     </style>
 </head>
 
 <body>
 
-<!-- Container for the entire header/nav area -->
+<!-- Navigation Bar -->
 <div class="relative w-full">
-    
-    <!-- Logo is now INSIDE the nav bar -->
     <nav class="topnav bg-white z-50 relative shadow-md">
-      <!-- Logo as the first item, aligned left -->
-      <img 
-          src="./images/Logo-Transparent.webp" 
-          alt="Small Kuk Sool Won Logo" 
-          class="nav-logo hidden md:block"
-      >
-      
-      <!-- Container to hold all links and center them -->
+      <img src="./images/Logo-Transparent.webp" alt="Small Kuk Sool Won Logo" class="nav-logo hidden md:block">
       <div class="nav-links">
-        <!-- These classes are now responsive on their own padding (p-3/p-4) and text size (text-lg/text-xl) -->
-        <a href="./index.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Home</a>
+        <a href="./index.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-900 transition-colors duration-200 rounded-lg bg-gray-100">Home</a>
         <a href="./pages/about.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">About</a>
         <a href="./pages/classes.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Classes</a>
-        <a href="./pages/students.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-900 transition-colors duration-200 rounded-lg bg-gray-100">Students</a>
+        <a href="./pages/students.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Students</a>
         <a href="./pages/contact.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Contact</a>
       </div>
-      <!-- Empty div for symmetry on desktop, pushed to the right with margin-left: auto 
-           This element is key to ensuring the nav-links group is mathematically centered -->
       <div class="hidden md:block" style="width: 4rem; margin-left: 1rem; flex-shrink: 0;"></div>
     </nav>
 </div>
 
-
-    <!-- Header Img -->
+    <!-- Header Section -->
     <header class="relative w-full overflow-hidden rounded-b-lg shadow-lg">
-        <!-- Background image -->
-        <img src="./images/ClassHeader.jpeg" alt="Kuk Sool Won of Linlithgow Logo" class="header-image">
-        
-        <!-- Transparent overlay image -->
-        <img src="./images/Logo-Transparent.webp" alt="Transparent overlay" class="overlay-image">
+        <img src="./images/ClassHeader.jpeg" alt="Kuk Sool Won Class Training" class="header-image">
+        <img src="./images/Logo-Transparent.webp" alt="Kuk Sool Won Logo Overlay" class="overlay-image">
     </header>
 
     <!-- Main Content Section -->
@@ -118,43 +93,63 @@
         <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg -mt-20 relative z-10">
             <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Kuk Sool Won of Linlithgow</h1>
             <p class="text-lg text-gray-600 leading-relaxed text-center mb-12 max-w-3xl mx-auto">
-            Kuk Sool Won is a traditional Korean martial art. We offer classes for all ages in Linlithgow.
+                Kuk Sool Won is a traditional Korean martial art. We offer classes for all ages in Linlithgow, focusing on self-defense, fitness, and discipline.
             </p>
             
-            <!-- KIDS Section: Image on Left, Text on Right (desktop) - MOVED TO TOP -->
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-4">Kuk Sool Won for Kids</h2>
+            <!-- SECTION 1: Kicking Koalas -->
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-4">Kicking Koalas</h2>
             <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
-                <!-- Image Column -->
-                <div class="order-1 md:order-1">
+                <!-- Text Content Column (Left on Desktop) -->
+                <div class="order-2 md:order-1 bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <p class="text-gray-600">
+                        For kids under 8, our Kicking Koalas are a great way for kids to learn and grow! Kuk Sool Won teaches children teamwork, discipline, and respect in a fun-filled environment. We focus on building the physical and mental foundations needed for success both in and out of the dojang.
+                    </p>
+                </div>
+                <!-- Image Column (Right on Desktop) -->
+                <div class="order-1 md:order-2">
                     <img 
-                        src="./images/archery.jpg" 
-                        alt="Kids Kuk Sool Won Class" 
+                        src="./images/kswforkids.jpg" 
+                        alt="Kicking Koalas Class" 
                         class="content-card-image"
                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Kids';"
                     >
                 </div>
-                <!-- Text Content Column -->
-                <div class="order-2 md:order-2 bg-gray-50 p-6 rounded-lg shadow-inner">
+            </div>
+
+            <!-- SECTION 2: Kids -->
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-12">Kids</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
+                <!-- Text Content Column (Left on Desktop) -->
+                <div class="order-2 md:order-1 bg-gray-50 p-6 rounded-lg shadow-inner">
                     <p class="text-gray-600">
-                      Kuk Sool Won is an exceptional discipline for children, focusing on more than just physical movement. Our structured classes help kids develop crucial life skills, including respect, self-control, and concentration, while providing a fantastic physical outlet. The training significantly improves coordination, balance, and fitness in a fun, safe, and supportive environment. As children progress through the ranks, they build unshakeable self-confidence and gain valuable skills to navigate peer pressure and challenging situations.
+                      Kuk Sool Won is an exceptional discipline for children, focusing on more than just physical movement. Our structured classes help kids develop crucial life skills, including respect, self-control, and concentration. The training significantly improves coordination, balance, and fitness in a safe and supportive environment.
                     </p>
+                </div>
+                <!-- Image Column (Right on Desktop) -->
+                <div class="order-1 md:order-2">
+                    <img 
+                        src="./images/archery.jpg" 
+                        alt="Kids Martial Arts Training" 
+                        class="content-card-image"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Kids';"
+                    >
                 </div>
             </div>
 
-            <!-- ADULTS Section: Text on Left, Image on Right (desktop) - MOVED TO BOTTOM -->
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-12">Kuk Sool Won for Adults</h2>
+            <!-- SECTION 3: Youths & Adults -->
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-12">Youths & Adults</h2>
             <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
-                <!-- Text Content Column -->
+                <!-- Text Content Column (Left on Desktop) -->
                 <div class="order-2 md:order-1 bg-gray-50 p-6 rounded-lg shadow-inner">
                     <p class="text-gray-600">
-                        Kuk Sool Won offers adults a comprehensive path to physical and mental fitness that goes far beyond a typical gym routine. It is a traditional Korean martial art that integrates striking, joint locks, throws, and weapon training, making it highly effective for self-defense. Crucially, it's designed to be adaptable for all ages and fitness levels. Training improves cardiovascular health, flexibility, and strength, while the disciplined structure also fosters better focus, stress relief, and a deep sense of accomplishment as you master complex techniques.
+                        Kuk Sool Won offers adults a comprehensive path to physical and mental fitness. It integrates striking, joint locks, throws, and weapon training, making it highly effective for self-defense. Our classes foster better focus, stress relief, and a deep sense of accomplishment as you master complex techniques.
                     </p>
                 </div>
-                <!-- Image Column -->
+                <!-- Image Column (Right on Desktop) -->
                 <div class="order-1 md:order-2">
                     <img 
                         src="./images/actionA.png" 
-                        alt="Adults Kuk Sool Won Class" 
+                        alt="Youths and Adults Training" 
                         class="content-card-image"
                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Adults';"
                     >
@@ -170,17 +165,18 @@
             <p>&copy; 2025 Kuk Sool Won of Linlithgow. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Accessibility Toolbar -->
+    <script src="./acctoolbar.min.js"></script>
+    <script>
+      window.onload = function() {
+        if (typeof MicAccessTool !== 'undefined') {
+            window.micAccessTool = new MicAccessTool({
+              contact: 'mailto:contact@kuksoolwonlinlithgow.com',
+              buttonPosition: 'right',
+            });
+        }
+      }
+    </script>
 </body>
-
-
-<script src="./acctoolbar.min.js"></script>
-// optional init
-<script>
-  window.onload = function() {
-    window.micAccessTool = new MicAccessTool({
-      contact: 'mailto:your-mail@your-awesome-website.com',
-      buttonPosition: 'right', // default is 'left'
-    });
-  }
-</script>
 </html>
