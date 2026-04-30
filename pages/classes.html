@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuk Sool Won of Linlithgow | Classes</title>
-    <meta name="description" content="Information about our Martial Arts Classes at Kukl Sool Won Linlithgow. Taking place at the Xcite centre and at longcroft hall, Linlithgow">
+    <meta name="description" content="Information about our Martial Arts Classes at Kuk Sool Won Linlithgow. Taking place at the Xcite centre and at Longcroft Hall, Linlithgow.">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,12 +21,12 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%); /* Centers the image */
-            width: auto; /* Allow image to scale proportionally */
-            max-width: 90%; /* Ensures the image doesn't overflow */
+            transform: translate(-50%, -50%);
+            width: auto;
+            max-width: 90%;
             height: auto;
             max-height: 90%;
-            object-fit: contain; /* Prevents cropping */
+            object-fit: contain;
             z-index: 10;
             opacity: 0.9;
         }
@@ -54,76 +54,138 @@
             margin-right: 1rem; 
             flex-shrink: 0;
         }
+        /* Class Card Styling */
+        .class-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .class-card:hover {
+            transform: translateY(-4px);
+        }
     </style>
 </head>
 
-<body>
+<body class="bg-gray-50">
 
-<!-- Container for the entire header/nav area -->
+<!-- Navigation -->
 <div class="relative w-full">
-    
-    <!-- UPDATED: Logo is now INSIDE the nav bar -->
     <nav class="topnav bg-white z-50 relative shadow-md">
         <a href="../index.html" class="hidden md:block transition-opacity hover:opacity-80">
             <img src="../images/Logo-Transparent.webp" alt="Small Kuk Sool Won Logo" class="nav-logo">
         </a>
       
-      <!-- Container to hold all links and center them -->
       <div class="nav-links">
-        <!-- These classes are now responsive on their own padding (p-3/p-4) and text size (text-lg/text-xl) -->
         <a href="../index.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Home</a>
         <a href="../pages/about.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">About</a>
         <a href="../pages/classes.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-900 transition-colors duration-200 rounded-lg bg-gray-100">Classes</a>
-         <a href="../pages/students.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Students</a>
+        <a href="../pages/students.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Students</a>
         <a href="../pages/contact.html" class="p-3 md:p-4 text-lg md:text-xl font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200 rounded-lg">Contact</a>
       </div>
-      <!-- Empty div for symmetry on desktop, pushed to the right with margin-left: auto 
-           This element is key to ensuring the nav-links group is mathematically centered -->
       <div class="hidden md:block" style="width: 4rem; margin-left: 1rem; flex-shrink: 0;"></div>
     </nav>
 </div>
-    <!-- Header Img -->
+
+    <!-- Header Section -->
     <header class="relative w-full overflow-hidden rounded-b-lg shadow-lg">
-        <!-- Background image for Classes page -->
         <img src="../images/tournamentB.jpg" alt="Kuk Sool Won of Linlithgow Classes" class="header-image">
-        
-        <!-- Transparent overlay image (logo) -->
         <img src="../images/Logo-Transparent.webp" alt="Transparent overlay" class="overlay-image">
     </header>
 
-      <!-- Main Content Section -->
     <main class="container mx-auto px-4 py-12">
         <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg -mt-20 relative z-10">
             <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Our Classes</h1>
-            <p class="text-lg text-gray-600 leading-relaxed text-center mb-8 max-w-2xl mx-auto">
-We offer two different class types - Family (all-ages) Classes, and our Kicking Koalas (8 and under) Class. We meet weekly in Linlithgow.          </p>
+            <p class="text-lg text-gray-600 leading-relaxed text-center mb-12 max-w-2xl mx-auto">
+                Whether you are looking for family bonding, discipline for your children, or high-level martial arts training, we have a class for you.
+            </p>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
-                <!-- Card 1: Family -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-inner flex flex-col justify-between">
-                    <div>
-                        <h2 class="text-2xl font-semibold mb-2 text-gray-900">All-Ages Classes</h2>
-                        <p class="text-gray-600 mb-1"><strong class="font-bold">Day:</strong> Tuesday</p>
-                        <p class="text-gray-600 mb-1"><strong class="font-bold">Time:</strong> 6:00 PM - 7:00 PM</p>
-                        <p class="text-gray-600 mb-4"><strong class="font-bold">Location:</strong> Xcite Leisure Centre, Linlithgow</p>
-                    </div>
-                    <div>
-                        <h2 class="text-2xl font-semibold mb-2 text-gray-900"></h2>
-                        <p class="text-gray-600 mb-1"><strong class="font-bold">Day:</strong> Friday</p>
-                        <p class="text-gray-600 mb-1"><strong class="font-bold">Time:</strong> 6:30 PM - 7:30 PM</p>
-                        <p class="text-gray-600"><strong class="font-bold">Location:</strong> Longcroft Hall, Linlithgow</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: Youths & Adults -->
+                <div class="class-card bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md flex flex-col border-t-4 border-t-indigo-600">
+                    <div class="p-6 flex-grow">
+                        <h2 class="text-2xl font-bold mb-6 text-gray-900 flex items-center">
+                            <span class="bg-indigo-100 text-indigo-700 p-2 rounded-lg mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+                            </span>
+                            Youths & Adults
+                        </h2>
+                        
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <p class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">Session One</p>
+                                <p class="text-gray-900 font-semibold">Tuesday</p>
+                                <p class="text-gray-600 text-sm">6:00 PM - 7:00 PM</p>
+                                <p class="text-gray-500 text-sm mt-1">Xcite Leisure Centre</p>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <p class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">Session Two</p>
+                                <p class="text-gray-900 font-semibold">Friday</p>
+                                <p class="text-gray-600 text-sm">6:30 PM - 7:30 PM</p>
+                                <p class="text-gray-500 text-sm mt-1">Longcroft Hall</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Card 2: Kicking Koalas -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow-inner flex flex-col justify-between">
-                    <div>
-                        <h2 class="text-2xl font-semibold mb-2 text-gray-900">Kicking Koalas</h2>
-                        <p class="text-gray-600 mb-1"><strong class="font-bold">Date:</strong> Tuesday</p>
-                        <p class="text-gray-600 mb-1"><strong class="font-bold">Time:</strong> 6:00 PM - 6:45 PM</p>
-                        <p class="text-gray-600 mb-4"><strong class="font-bold">Location:</strong> Xcite Leisure Centre, Linlithgow</p>
+                <!-- Card 2: Kids -->
+                <div class="class-card bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md flex flex-col border-t-4 border-t-red-500">
+                    <div class="p-6 flex-grow">
+                        <h2 class="text-2xl font-bold mb-6 text-gray-900 flex items-center">
+                            <span class="bg-red-100 text-red-600 p-2 rounded-lg mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </span>
+                            Kids
+                        </h2>
+                        
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <p class="text-xs font-bold text-red-600 uppercase tracking-wider mb-1">Session One</p>
+                                <p class="text-gray-900 font-semibold">Tuesday</p>
+                                <p class="text-gray-600 text-sm">6:00 PM - 7:00 PM</p>
+                                <p class="text-gray-500 text-sm mt-1">Xcite Leisure Centre</p>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <p class="text-xs font-bold text-red-600 uppercase tracking-wider mb-1">Session Two</p>
+                                <p class="text-gray-900 font-semibold">Friday</p>
+                                <p class="text-gray-600 text-sm">6:00 PM - 6:45 PM</p>
+                                <p class="text-gray-500 text-sm mt-1">Longcroft Hall</p>
+                            </div>
+                        </div>
                     </div>
-                  
+                </div>
+
+                <!-- Card 3: Kicking Koalas -->
+                <div class="class-card bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md flex flex-col border-t-4 border-t-yellow-500">
+                    <div class="p-6 flex-grow">
+                        <h2 class="text-2xl font-bold mb-6 text-gray-900 flex items-center">
+                            <span class="bg-yellow-100 text-yellow-700 p-2 rounded-lg mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                            </span>
+                            Kicking Koalas
+                        </h2>
+                        
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <p class="text-xs font-bold text-yellow-600 uppercase tracking-wider mb-1">Session One</p>
+                                <p class="text-gray-900 font-semibold">Tuesday</p>
+                                <p class="text-gray-600 text-sm">6:00 PM - 6:45 PM</p>
+                                <p class="text-gray-500 text-sm mt-1">Xcite Leisure Centre</p>
+                            </div>
+                            
+                            <div class="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                                <p class="text-xs font-bold text-yellow-600 uppercase tracking-wider mb-1">Session Two</p>
+                                <p class="text-gray-900 font-semibold">Friday</p>
+                                <p class="text-gray-600 text-sm">6:00 PM - 6:45 PM</p>
+                                <p class="text-gray-500 text-sm mt-1">Longcroft Hall</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,19 +194,20 @@ We offer two different class types - Family (all-ages) Classes, and our Kicking 
     <!-- Footer -->
     <footer class="bg-gray-800 text-gray-300 py-6 mt-12 text-center rounded-t-xl">
         <div class="container mx-auto px-4">
-            <p>&copy; 2024 Kuk Sool Won of Linlithgow. All rights reserved.</p>
+            <p>&copy; 2025 Kuk Sool Won of Linlithgow. All rights reserved.</p>
         </div>
     </footer>
-</body>
 
-<script src="../acctoolbar.min.js"></script>
-// optional init
-<script>
-  window.onload = function() {
-    window.micAccessTool = new MicAccessTool({
-      contact: 'mailto:linlithgowksw@outlook.com',
-      buttonPosition: 'right', // default is 'left'
-    });
-  }
-</script>
+    <script src="../acctoolbar.min.js"></script>
+    <script>
+      window.onload = function() {
+        if (typeof MicAccessTool !== 'undefined') {
+            window.micAccessTool = new MicAccessTool({
+              contact: 'mailto:linlithgowksw@outlook.com',
+              buttonPosition: 'right',
+            });
+        }
+      }
+    </script>
+</body>
 </html>

@@ -17,20 +17,20 @@
             object-fit: cover;
             width: 100%;
             height: 500px;
-            /* Zoom in slightly to crop the sides as requested */
-            transform: scale(1); 
+            /* Zoomed in to crop sides as per earlier design preference */
+            transform: scale(1.15); 
             transform-origin: center;
         }
         .overlay-image {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%); /* Centers the image */
-            width: auto; /* Allow image to scale proportionally */
-            max-width: 90%; /* Ensures the image doesn't overflow */
+            transform: translate(-50%, -50%);
+            width: auto;
+            max-width: 90%;
             height: auto;
             max-height: 90%;
-            object-fit: contain; /* Prevents cropping */
+            object-fit: contain;
             z-index: 10;
             opacity: 0.9;
         }
@@ -68,12 +68,11 @@
     </style>
 </head>
 
-<body>
+<body class="bg-gray-50">
 
 <!-- Navigation Bar -->
 <div class="relative w-full">
     <nav class="topnav bg-white z-50 relative shadow-md">
-      <!-- Logo wrapped in a link to homepage -->
       <a href="./index.html" class="hidden md:block transition-opacity hover:opacity-80">
         <img src="./images/Logo-Transparent.webp" alt="Small Kuk Sool Won Logo" class="nav-logo">
       </a>
@@ -88,13 +87,11 @@
     </nav>
 </div>
 
-    <!-- Header Section -->
     <header class="relative w-full overflow-hidden rounded-b-lg shadow-lg">
         <img src="./images/classC.jpg" alt="Kuk Sool Won Class Training" class="header-image">
         <img src="./images/Logo-Transparent.webp" alt="Kuk Sool Won Logo Overlay" class="overlay-image">
     </header>
 
-    <!-- Main Content Section -->
     <main class="container mx-auto px-4 py-12">
         <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg -mt-20 relative z-10">
             <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-6">Kuk Sool Won of Linlithgow</h1>
@@ -105,74 +102,85 @@
             <!-- SECTION 1: Kicking Koalas -->
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-4">Kicking Koalas</h2>
             <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
-                <!-- Text Content Column (Left on Desktop) -->
                 <div class="order-2 md:order-1 bg-gray-50 p-6 rounded-lg shadow-inner">
                     <p class="text-gray-600">
                         For kids under 8, our Kicking Koalas are a great way for kids to learn and grow! Kuk Sool Won teaches children teamwork, discipline, and respect in a fun-filled environment. We focus on building the physical and mental foundations needed for success both in and out of the dojang.
                     </p>
                 </div>
-                <!-- Image Column (Right on Desktop) -->
                 <div class="order-1 md:order-2">
-                    <img 
-                        src="./images/KickingKoalas.jpeg" 
-                        alt="Kicking Koalas Class" 
-                        class="content-card-image"
-                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Kids';"
-                    >
+                    <img src="./images/KickingKoalas.jpeg" alt="Kicking Koalas Class" class="content-card-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Kids';">
                 </div>
             </div>
 
             <!-- SECTION 2: Kids -->
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-12">Kids</h2>
             <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
-                <!-- Text Content Column (Left on Desktop) -->
                 <div class="order-2 md:order-1 bg-gray-50 p-6 rounded-lg shadow-inner">
                     <p class="text-gray-600">
                       Kuk Sool Won is an exceptional discipline for children, focusing on more than just physical movement. Our structured classes help kids develop crucial life skills, including respect, self-control, and concentration. The training significantly improves coordination, balance, and fitness in a safe and supportive environment.
                     </p>
                 </div>
-                <!-- Image Column (Right on Desktop) -->
                 <div class="order-1 md:order-2">
-                    <img 
-                        src="./images/archery.jpg" 
-                        alt="Kids Martial Arts Training" 
-                        class="content-card-image"
-                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Kids';"
-                    >
+                    <img src="./images/archery.jpg" alt="Kids Martial Arts Training" class="content-card-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Kids';">
                 </div>
             </div>
 
             <!-- SECTION 3: Youths & Adults -->
             <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 mt-12">Youths & Adults</h2>
             <div class="grid md:grid-cols-2 gap-8 items-start mb-12">
-                <!-- Text Content Column (Left on Desktop) -->
                 <div class="order-2 md:order-1 bg-gray-50 p-6 rounded-lg shadow-inner">
                     <p class="text-gray-600">
                         Kuk Sool Won offers adults a comprehensive path to physical and mental fitness. It integrates striking, joint locks, throws, and weapon training, making it highly effective for self-defense. Our classes foster better focus, stress relief, and a deep sense of accomplishment as you master complex techniques.
                     </p>
                 </div>
-                <!-- Image Column (Right on Desktop) -->
                 <div class="order-1 md:order-2">
-                    <img 
-                        src="./images/actionA.png" 
-                        alt="Youths and Adults Training" 
-                        class="content-card-image"
-                        onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Adults';"
-                    >
+                    <img src="./images/actionA.png" alt="Youths and Adults Training" class="content-card-image" onerror="this.onerror=null;this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=Adults';">
+                </div>
+            </div>
+
+            <!-- ENHANCED UTILITY WAREHOUSE SECTION -->
+            <hr class="my-16 border-gray-100">
+            <div class="bg-gradient-to-br from-indigo-900 via-indigo-800 to-purple-900 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                <!-- Subtle background design element -->
+                <div class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-white opacity-5 rounded-full"></div>
+                
+                <div class="grid md:grid-cols-5 gap-8 items-center relative z-10">
+                    <div class="md:col-span-3 text-center md:text-left">
+                        <span class="inline-block bg-indigo-500/30 text-indigo-200 text-xs font-bold tracking-widest uppercase py-1 px-3 rounded-full mb-4">Partner Opportunity</span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Support Our Club!</h2>
+                        <p class="text-indigo-100 text-lg mb-6 leading-relaxed">
+                            Want to help our club grow while saving money? Sign up for cheaper household bills at Utility Warehouse. Every signup helps our club directly!
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <div class="flex items-center text-indigo-200 text-sm">
+                                <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Lower Bills
+                            </div>
+                            <div class="flex items-center text-indigo-200 text-sm">
+                                <svg class="w-5 h-5 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                Support for our club!
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-2 flex flex-col items-center">
+                        <div class="bg-white p-4 rounded-3xl shadow-2xl ring-8 ring-indigo-500/20 transform hover:scale-105 transition-transform duration-300">
+                            <img src="./images/QRCodeUW.jpeg" alt="Utility Warehouse QR Code" class="w-40 h-40 md:w-48 md:h-48 rounded-xl">
+                        </div>
+                        <p class="mt-4 text-white font-semibold text-sm">Scan to learn more & save</p>
+                    </div>
                 </div>
             </div>
             
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-gray-300 py-6 mt-12 text-center rounded-t-xl">
         <div class="container mx-auto px-4">
             <p>&copy; 2025 Kuk Sool Won of Linlithgow. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Accessibility Toolbar -->
     <script src="./acctoolbar.min.js"></script>
     <script>
       window.onload = function() {
@@ -185,4 +193,4 @@
       }
     </script>
 </body>
-</html>       
+</html>
